@@ -1,0 +1,112 @@
+﻿20028
+程序填空，不要改变与输入输出有关的语句。
+输入一个四位数，将其加密后输出。方法是将该数每一位上的数字加9，然后除以10取余，做为该位上的新数字，最后将千位和十位上的数字互换，百位和个位上的数字互换，组成加密后的新四位数。
+输入输出示例：括号内是说明
+输入
+1257
+输出
+The encrypted number is 4601(每一位上的数字加9除以10取余后，得0146，交换后得到4601)
+
+
+#include <stdio.h>
+int main(void)
+{
+    int digit1, digit2, digit3, digit4, newnum, number;
+
+    scanf("%d", &number);
+/*---------*/
+    printf("The encrypted number is %d\n", newnum);
+}
+--------------------------------------------------------------------------------------------------------------
+20055
+程序填空，不要改变与输入输出有关的语句。
+输入一个正整数 repeat (0<repeat<10)，做repeat次下列运算：
+输入 x，计算并输出下列分段函数f(x)的值(保留3位小数)。
+当 x 不等于 0 时，y = f(x) = 1/x，当 x 等于 0 时，y = f(x) = 0。
+输入输出示例：括号内是说明
+输入
+2	(repeat=2)
+10
+0
+输出
+f(10.00) = 0.100
+f(0.00) = 0.000
+
+
+#include <stdio.h>
+int main(void)
+{
+    int repeat, ri;
+    double x, y;  
+
+    scanf("%d", &repeat);
+    for(ri = 1; ri <= repeat; ri++){
+        scanf("%lf", &x);	
+/*---------*/
+        printf("f(%.2f) = %.3f\n", x, y);
+    }
+}
+--------------------------------------------------------------------------------------------------------------
+20061
+程序填空，不要改变与输入输出有关的语句。
+输入一个正整数repeat (0<repeat<10)，做repeat次下列运算：
+为了提倡居民节约用电，某省电力公司执行"阶梯电价"，安装一户一表的居民用户电价分为两个"阶梯"：月用电量50千瓦时以内的，电价为0.53元/千瓦时；超过50千瓦时的用电量，电价上调0.05元/千瓦时。
+输入用户的月用电量e(千瓦时)，计算并输出该用户应支付的电费(元)，结果保留2位小数。
+输入输出示例：括号内是说明
+输入
+2        (repeat=2)
+10       (e=10)	
+100      (e=100)	
+输出
+cost = 5.30
+cost = 55.50
+
+
+#include <stdio.h>
+int main(void)
+{   
+    int repeat, ri;
+    double cost, e;
+
+    scanf("%d", &repeat);
+    for(ri = 1; ri <= repeat; ri++){
+        scanf("%lf", &e);
+/*---------*/
+        printf("cost = %.2f\n", cost);
+    } 
+}
+
+--------------------------------------------------------------------------------------------------------------
+30007
+程序填空，不要改变与输入输出有关的语句。
+输入一个正整数 repeat (0<repeat<10)，做 repeat 次下列运算：
+输入三角形的3条边 a, b, c，如果能构成一个三角形，输出面积 area 和周长 perimeter(保留2位小数)；否则，输出"These sides do not correspond to a valid triangle"。
+在一个三角形中，任意两边之和大于第三边。三角形面积计算公式：area = (s(s-a)(s-b)(s-c))^0.5 ，其中s = (a+b+c)/2
+输出使用以下语句：
+printf("area = %.2f, perimeter = %.2f\n",area, perimeter);
+printf("These sides do not correspond to a valid triangle\n");
+ 
+输入输出示例：括号内是说明
+输入
+2       (repeat=2) 
+5 5 3	(a=5,b=5,c=3)
+1 4 1	(a=1,b=4,c=1)
+输出
+area = 7.15, perimeter = 13.00
+These sides do not correspond to a valid triangle
+
+
+#include <stdio.h>
+#include <math.h>
+int main(void)
+{
+    int a, b, c;
+    int repeat, ri;
+    double area, perimeter, s;
+
+    scanf("%d", &repeat);
+    for(ri = 1; ri <= repeat; ri++){
+        scanf("%d%d%d", &a, &b, &c);
+/*---------*/
+    }
+}

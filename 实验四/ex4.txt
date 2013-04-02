@@ -1,0 +1,15 @@
+1.C
+2.C
+3.C
+4.C
+5.D
+6.D
+7.D
+8.C
+9.float;%f;double;%lf;int;short;long
+10.-16
+11.26
+12.4.5
+13.13.7
+14.int
+15.c:dec=120,oct=170,hex=78,,ASCII=x
