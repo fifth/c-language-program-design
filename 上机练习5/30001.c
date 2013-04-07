@@ -10,17 +10,17 @@ void main(void)
         scanf("%lf%lf%lf", &a, &b, &c);
         d = b*b-4*a*c;
         if (a==0&&b==0&&c==0) {
-        	printf("²ÎÊý¶¼ÎªÁã£¬·½³ÌÎÞÒâÒå!\n");
+        	printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½!\n");
         } else if (a==0&&b==0&&c!=0) {
-        	printf("aºÍbÎª0£¬c²»Îª0£¬·½³Ì²»³ÉÁ¢\n");
+        	printf("aï¿½ï¿½bÎª0ï¿½ï¿½cï¿½ï¿½Îª0ï¿½ï¿½ï¿½ï¿½ï¿½Ì²ï¿½ï¿½ï¿½ï¿½ï¿½\n");
         } else if (a==0&&b!=0&&c!=0) {
         	printf("x = %0.2f\n", -c/b);
         } else if (d>=0) {
         	printf("x1 = %0.2f\n", (-b+sqrt(d))/(2*a));
-			printf("x2 = %0.2f\n", (-b-sqrt(d))/(2*a));
+		printf("x2 = %0.2f\n", (-b-sqrt(d))/(2*a));
         } else if (d<0) {
         	printf("x1 = %0.2f+%0.2fi\n", -b/(2*a), sqrt(-d)/(2*a));
-			printf("x2 = %0.2f-%0.2fi\n", -b/(2*a), sqrt(-d)/(2*a));
+		printf("x2 = %0.2f-%0.2fi\n", -b/(2*a), sqrt(-d)/(2*a));
         }
     }
 }
