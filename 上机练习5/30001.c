@@ -10,9 +10,9 @@ void main(void)
         scanf("%lf%lf%lf", &a, &b, &c);
         d = b*b-4*a*c;
         if (a==0&&b==0&&c==0) {
-        	printf("������Ϊ�㣬����������!\n");
+        	printf("参数都为零，方程无意义!\n");
         } else if (a==0&&b==0&&c!=0) {
-        	printf("a��bΪ0��c��Ϊ0�����̲�����\n");
+        	printf("a和b为0，c不为0，方程不成立\n");
         } else if (a==0&&b!=0&&c!=0) {
         	printf("x = %0.2f\n", -c/b);
         } else if (d>=0) {
