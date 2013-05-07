@@ -1,0 +1,44 @@
+// 程序填空，不要改变与输入输出有关的语句。
+// 输入一个正整数 repeat (0<repeat<10)，做 repeat 次下列运算：
+// 输入一个正整数 n (1<n<=10)，再输入 n 个整数，先输出最大值及其最大下标（下标从0开始)，再将最大值与最后一个数交换，并输出交换后的 n 个数。
+// 输入输出示例：括号内为说明
+// 输入
+// 3            (repeat=3) 
+// 5 	     (n=5)
+// 4 3 5 5 2
+// 4	     (n=4)
+// 1 5 6 7
+// 5  	     (n=5)
+// 5 4 3 2 1
+// 输出
+// max = 5, index = 3
+// 4 3 5 2 5 
+// max = 7, index = 3
+// 1 5 6 7 
+// max = 5, index = 0
+// 1 4 3 2 5 
+
+#include <stdio.h>
+int main(void)
+{
+    int i, index, n, temp;
+    int repeat, ri;
+    int a[10];
+
+    scanf("%d", &repeat);
+    for(ri = 1; ri <= repeat; ri++){
+        scanf("%d", &n);
+        for(i = 0; i < n; i++)
+            scanf("%d", &a[i]);
+        index=0;
+        for (i = 0; i < n; i++) 
+            if (a[index]<=a[i]) index=i;
+        printf("max = %d, index = %d\n", a[index], index);
+        temp=a[n-1];
+        a[n-1]=a[index];
+        a[index]=temp;
+        for(i = 0; i < n; i++) 
+            printf("%d ", a[i]);
+        printf("\n");
+    }
+}

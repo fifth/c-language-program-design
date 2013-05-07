@@ -29,7 +29,6 @@ int main(void)
                     sum+=a[i][j];
                 }
             }
-
         printf("sum = %d\n", sum);
     }
 }
