@@ -15,7 +15,6 @@
 #include "stdio.h"
 #include "math.h"
 double funcos(double e, double x);
-double multi(int x);
 void main(void)
 {
     int repeat, ri;
