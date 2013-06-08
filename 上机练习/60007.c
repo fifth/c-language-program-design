@@ -12,7 +12,7 @@
 #include <stdio.h>
 int fun(int n);
 int main(void)
-{  
+{	
     int m1,m2;
 
     scanf("%d%d", &m1, &m2);
@@ -20,14 +20,13 @@ int main(void)
     printf("%d的逆向是%d\n", m2, fun(m2));  
 
 }
-
-fun (int m) {
-	int i;
-	int copy;
-	copy=0;
+int fun(int n) {
+	int temp = 0,flag;
+	flag = n<0?-1:1;
+	n = n<0?-n:n;
 	do {
-		copy=copy*10+m%10;
-		m/=10;
-	} while (m!=0);
-	return copy;
+		temp = temp*10 + n%10;
+		n /= 10;
+	} while (n!=0);
+	return temp*flag;
 }
